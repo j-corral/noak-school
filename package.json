@@ -1,0 +1,85 @@
+{
+  "name": "noak-template",
+  "version": "1.0.0",
+  "author": "Jonathan Corral <contact@jonathan-corral.fr>",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "noak",
+    "next.js"
+  ],
+  "homepage": "https://github.com/j-corral/noak-template",
+  "repository": "git+https://github.com/j-corral/noak-template.git",
+  "private": true,
+  "eslintConfig": {
+    "extends": [
+      "plugin:@next/next/recommended"
+    ],
+    "ignorePatterns": [
+      "generated"
+    ],
+    "rules": {
+      "jsx-a11y/anchor-is-valid": [
+        "off"
+      ]
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,md}": [
+      "prettier --write"
+    ],
+    "**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ]
+  },
+  "scripts": {
+    "dev": "yarn build:config && next dev -p 3030",
+    "build": "yarn build:config && next build",
+    "build:config": "tsc next.config.ts --target es5 --outDir .noak",
+    "start": "next start",
+    "lint": "next lint",
+    "check:types": "tsc --noEmit",
+    "validate": "yarn lint && yarn check:types"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^1.8.3",
+    "@chakra-ui/theme-tools": "^1.3.4",
+    "@emotion/react": "^11.8.1",
+    "@emotion/server": "^11.4.0",
+    "@emotion/styled": "^11.8.1",
+    "@hoomies/fuel.functions.parse-mdx": "^0.0.4",
+    "@hoomies/noak.components.footer": "^0.0.13",
+    "@hoomies/noak.components.mdx.converter": "^0.0.21",
+    "@hoomies/noak.components.navigation.menu": "^0.0.17",
+    "@hoomies/noak.components.switcher.locale": "^0.0.23",
+    "@hoomies/noak.components.switcher.theme": "^0.0.5",
+    "@hoomies/noak.functions.get-components": "^0.0.21",
+    "@hoomies/noak.functions.route": "^0.0.5",
+    "@hoomies/noak.layouts.page.default": "^0.0.3",
+    "@hoomies/noak.layouts.root": "^0.0.5",
+    "@hoomies/noak.lib.api": "^0.0.4",
+    "@hoomies/noak.types.next": "^0.0.8",
+    "@hoomies/noak.types.route": "^0.0.1",
+    "@hoomies/unagui.components.footer": "^0.0.7",
+    "@hoomies/unagui.components.header": "^0.0.7",
+    "@hoomies/unagui.components.hero": "^0.0.12",
+    "@hoomies/unagui.theme.wrapper": "^0.0.8",
+    "framer-motion": "^6.2.6",
+    "next": "^12",
+    "next-compose-plugins": "^2.2.1",
+    "next-translate": "^1.3.4",
+    "react": "latest",
+    "react-dom": "latest",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.18",
+    "@types/react": "17.0.39",
+    "eslint": "8.9.0",
+    "eslint-config-next": "12.1.0",
+    "prettier": "^2.4.1",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "4.5.5"
+  }
+}

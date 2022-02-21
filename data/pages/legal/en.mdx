@@ -1,0 +1,122 @@
+---
+type: 'page'
+title: 'Legal Informations'
+owner:
+  {
+    isEntity: true,
+    name: 'Company name',
+    legalStatus: 'Company type',
+    shareCapital: '',
+    registration: { siret: 'xxx', rcs: '', vat: 'xxx', artisan: '' },
+    address: 'Company address',
+    phone: 'phone number',
+    mail: 'john.doe@domain.com',
+    publicationDirector: 'John Doe',
+  }
+host:
+  {
+    name: 'Vercel Inc.',
+    legalStatus: '',
+    address: '340 S Lemon Ave #4133\nWalnut, CA 91789',
+    email: 'privacy@vercel.com',
+    site: 'https://vercel.com',
+  }
+---
+
+# Legal Information
+
+## Site Owner
+
+<Text children={`${owner.name}, ${owner.legalStatus}`} />
+
+<Text children={owner.registration?.siret ? `N° SIRET : ${owner.registration?.siret}` : ``} />
+<Text children={owner.registration?.rcs ? `N° Inscription RCS : ${owner.registration?.rcs}` : ``} />
+<Text children={owner.registration?.vat ? `N° TVA : ${owner.registration?.vat}` : ``} />
+<Text
+  children={owner.registration?.artisan ? `N° Immatriculation Répertoire Métiers : ${owner.registration?.artisan}` : ``}
+/>
+
+<Text children={owner.shareCapital ? `Capital Social: ${owner.shareCapital}` : ''} />
+
+<Text children={owner.isEntity ? `Siège Social : ${owner.address}` : `Adresse : ${owner.address}`} />
+
+<Text children={!owner.isEntity ? `Téléphone : ${owner.phone}` : ``} />
+
+<Text children={!owner.isEntity ? `Email : ${owner.email}` : ``} />
+
+<Text children={`Directeur de publication : ${owner.publicationDirector}`} />
+
+## Site Hosting
+
+<Text children={`Hébergeur : ${host.name} ${host.legalStatus}`} />
+<Text children={`Adresse : ${host.address}`} />
+<Text children={`Email : ${host.email}`} />
+<Text children={`Site web : ${host.site}`} />
+
+## Respect for copyright
+
+This site constitutes a work protected by copyright in force in France.
+
+Furthermore, unless otherwise stated, the intellectual property rights on the documents contained in the site (texts, photographs, images, etc.) and each of the elements created for this site are the exclusive property of Jonathan Corral.
+
+The use or reproduction of any elements published on the site is expressly prohibited (art. 122.4 of the intellectual property code).
+
+## Personal data
+
+### Use of personal data collected
+
+#### Comments
+
+When you leave a comment on my website, the data entered in the form as well as your IP address and your browser are collected to help me detect undesirable comments.
+
+An anonymised string created from your email address (also known as a hash) may be sent to the Gravatar service to check whether you are using it. The Gravatar service privacy policy is available here: https://automattic.com/privacy/. After your comment has been validated, your profile picture will be publicly visible next to your comment.
+
+#### Media
+
+If you are a registered user you can upload images to the site. I advise you to avoid uploading images containing EXIF data of GPS coordinates. This is because visitors to the website can download and extract location data from these images.
+
+#### Contact forms
+
+There is 1 contact form on the website (on the contact page). It collects information about your name, phone number and e-mail address.
+
+#### Cookies
+
+If you leave a comment on my site, you will be asked to save your name, email address and website in cookies. This is only for your convenience. You will not have to enter this information if you leave another comment later. These cookies expire after one year.
+
+If you have an account and log in to this site, a temporary cookie will be created. This determines whether your browser accepts cookies. As a result, it does not contain any personal data. Furthermore, it will be deleted automatically when you close your browser.
+
+When you log in, we will set a number of cookies to store your login information and screen preferences. The lifetime of a login cookie is two days, the lifetime of a screen option cookie is one year. If you check "Remember me", your login cookie will be retained for a fortnight. If you log out of your account, the login cookie will be deleted.
+
+When editing or publishing an article, an additional cookie will be stored in your browser. This cookie does not contain any personal data. It simply indicates the identifier of the article you have just modified. It expires after one day.
+
+#### Embedded content from other sites
+
+Articles on this site may include embedded content (e.g. videos, images, articles...). Embedded content from other sites behaves in the same way as if the visitor were on that other site.
+
+These websites may collect data about you, use cookies, embed third-party tracking tools, and track your interactions with embedded content if you have an account with their website.
+
+#### Statistics and audience measurement
+
+Google Analytics analyses your behaviour on this website. Various data are collected: age, gender, geographical area, duration of the session, behaviour on the site, etc. This data is kept for a total of 26 months in the Jonathan Corral Google Analytics account. This data will not be disclosed and is used for statistical purposes only.
+
+### Use and transmission of your personal data
+
+Your personal data is used only in the context of a professional relationship between you and me (Jonathan Corral) and is not disclosed to any third party.
+
+### How long your data is stored
+
+If you leave a comment, the comment and its metadata are stored indefinitely. This allows subsequent comments to be automatically recognised and approved instead of being left in the moderation queue.
+
+For users who register on our site (if possible), we also store the personal data indicated in their profile. All users can view, edit or delete their personal information at any time (with the exception of their username). Site managers can also view and modify this information.
+
+### Privacy: the rights you have over your data
+
+If you have an account or have left comments on the site, you can request to receive a file containing all the personal data we hold about you, including that which you have provided to us. You may also request the deletion of your personal data. This does not include data stored for administrative, legal or security purposes.
+
+### Transmission of your personal data
+
+Visitors' comments can be checked using an automated service for detecting undesirable comments.
+
+### Contact information
+
+For any request, question or complaint, please write to us via the contact page.

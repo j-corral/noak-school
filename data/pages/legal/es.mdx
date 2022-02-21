@@ -1,0 +1,122 @@
+---
+type: 'page'
+title: 'Información legal'
+owner:
+  {
+    isEntity: true,
+    name: 'Empresa',
+    legalStatus: 'S.L.',
+    shareCapital: '',
+    registration: { siret: 'xxx', rcs: '', vat: 'xxx', artisan: '' },
+    address: 'C/ Falsa 123',
+    phone: '0612345678',
+    mail: 'john.doe@domain.com',
+    publicationDirector: 'John Doe',
+  }
+host:
+  {
+    name: 'Vercel Inc.',
+    legalStatus: '',
+    address: '340 S Lemon Ave #4133\nWalnut, CA 91789',
+    email: 'privacy@vercel.com',
+    site: 'https://vercel.com',
+  }
+---
+
+# Información legal
+
+## Propietario del sitio
+
+<Text children={`${owner.name}, ${owner.legalStatus}`} />
+
+<Text children={owner.registration?.siret ? `N° SIRET : ${owner.registration?.siret}` : ``} />
+<Text children={owner.registration?.rcs ? `N° Inscription RCS : ${owner.registration?.rcs}` : ``} />
+<Text children={owner.registration?.vat ? `N° TVA : ${owner.registration?.vat}` : ``} />
+<Text
+  children={owner.registration?.artisan ? `N° Immatriculation Répertoire Métiers : ${owner.registration?.artisan}` : ``}
+/>
+
+<Text children={owner.shareCapital ? `Capital Social: ${owner.shareCapital}` : ''} />
+
+<Text children={owner.isEntity ? `Siège Social : ${owner.address}` : `Adresse : ${owner.address}`} />
+
+<Text children={!owner.isEntity ? `Téléphone : ${owner.phone}` : ``} />
+
+<Text children={!owner.isEntity ? `Email : ${owner.email}` : ``} />
+
+<Text children={`Directeur de publication : ${owner.publicationDirector}`} />
+
+## Alojamiento del sitio
+
+<Text children={`Hébergeur : ${host.name} ${host.legalStatus}`} />
+<Text children={`Adresse : ${host.address}`} />
+<Text children={`Email : ${host.email}`} />
+<Text children={`Site web : ${host.site}`} />
+
+## Respeto a los derechos de autor
+
+Este sitio constituye una obra protegida por los derechos de autor vigentes en Francia.
+
+Además, salvo que se indique lo contrario, los derechos de propiedad intelectual sobre los documentos contenidos en el sitio (textos, fotografías, imágenes, etc.) y cada uno de los elementos creados para este sitio son propiedad exclusiva de Jonathan Corral.
+
+Queda expresamente prohibida la utilización o reproducción de cualquier elemento publicado en el sitio (art. 122.4 del código de la propiedad intelectual).
+
+## Datos personales
+
+### Uso de los datos personales recogidos
+
+#### Comentarios
+
+Cuando usted deja un comentario en mi sitio web, los datos introducidos en el formulario, así como su dirección IP y su navegador, se recogen para ayudarme a detectar comentarios no deseados.
+
+Una cadena anónima creada a partir de tu dirección de correo electrónico (también conocida como hash) puede ser enviada al servicio Gravatar para comprobar si lo estás utilizando. La política de privacidad del servicio Gravatar está disponible aquí: https://automattic.com/privacy/. Una vez validado tu comentario, tu foto de perfil será visible públicamente junto a tu comentario.
+
+#### Medios de comunicación
+
+Si eres un usuario registrado puedes subir imágenes al sitio. Te aconsejo que evites subir imágenes que contengan datos EXIF de coordenadas GPS. Esto se debe a que los visitantes del sitio web pueden descargar y extraer datos de localización de estas imágenes.
+
+#### Formularios de contacto
+
+Hay un formulario de contacto en el sitio web (en la página de contacto). Recoge información sobre su nombre, número de teléfono y dirección de correo electrónico.
+
+#### Galletas
+
+Si deja un comentario en mi sitio, se le pedirá que guarde su nombre, dirección de correo electrónico y sitio web en las cookies. Esto es sólo para su comodidad. No tendrá que introducir esta información si deja otro comentario más tarde. Estas cookies caducan al cabo de un año.
+
+Si tiene una cuenta y se conecta a este sitio, se creará una cookie temporal. Esto determina si su navegador acepta cookies. Por lo tanto, no contiene ningún dato personal. Además, se eliminará automáticamente al cerrar el navegador.
+
+Al iniciar la sesión, estableceremos una serie de cookies para almacenar su información de inicio de sesión y sus preferencias de pantalla. La vida de una cookie de inicio de sesión es de dos días, la vida de una cookie de opción de pantalla es de un año. Si marca la opción "Recordarme", su cookie de inicio de sesión se conservará durante quince días. Si cierra la sesión de su cuenta, la cookie de inicio de sesión se eliminará.
+
+Al editar o publicar un artículo, se almacenará una cookie adicional en su navegador. Esta cookie no contiene ningún dato personal. Simplemente indica el identificador del artículo que acaba de modificar. Caduca al cabo de un día.
+
+#### Contenido incrustado de otros sitios
+
+Los artículos de este sitio pueden incluir contenido incrustado (por ejemplo, vídeos, imágenes, artículos...). El contenido incrustado de otros sitios se comporta de la misma manera que si el visitante estuviera en ese otro sitio.
+
+Estos sitios web pueden recopilar datos sobre usted, utilizar cookies, incrustar herramientas de seguimiento de terceros y rastrear sus interacciones con el contenido incrustado si tiene una cuenta en su sitio web.
+
+#### Estadísticas y medición de la audiencia
+
+Google Analytics analiza su comportamiento en este sitio web. Se recogen diversos datos: edad, sexo, zona geográfica, duración de la sesión, comportamiento en el sitio, etc. Estos datos se conservan durante un total de 26 meses en la cuenta de Google Analytics de Jonathan Corral. Estos datos no se divulgarán y se utilizarán únicamente con fines estadísticos.
+
+### Uso y transmisión de sus datos personales
+
+Sus datos personales se utilizan únicamente en el contexto de una relación profesional entre usted y yo (Jonathan Corral) y no se revelan a terceros.
+
+### Cuánto tiempo se almacenan sus datos
+
+Si deja un comentario, éste y sus metadatos se almacenan indefinidamente. Esto permite que los comentarios posteriores se reconozcan y aprueben automáticamente en lugar de quedar en la cola de moderación.
+
+Para los usuarios que se registran en nuestro sitio (si es posible), también almacenamos los datos personales indicados en su perfil. Todos los usuarios pueden ver, editar o eliminar su información personal en cualquier momento (a excepción de su nombre de usuario). Los administradores del sitio también pueden ver y modificar esta información.
+
+### Privacidad: los derechos que tiene sobre sus datos
+
+Si tiene una cuenta o ha dejado comentarios en el sitio, puede solicitar que le enviemos un archivo con todos los datos personales que tenemos sobre usted, incluidos los que nos ha proporcionado. También puede solicitar la supresión de sus datos personales. Esto no incluye los datos almacenados con fines administrativos, legales o de seguridad.
+
+### Transmisión de sus datos personales
+
+Los comentarios de los visitantes pueden ser revisados mediante un servicio automatizado para detectar comentarios indeseables.
+
+### Información de contacto
+
+Para cualquier solicitud, pregunta o queja, escríbanos a través de la página de contacto.
