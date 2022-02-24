@@ -142,7 +142,7 @@ const GradeForm = () => {
         )}
       </Formik>
 
-      {result?.input != undefined && (
+      {Object.keys(result).length > 0 && (
         <Container>
         <VStack>
           <Text fontSize={'2xl'} as="h1">
