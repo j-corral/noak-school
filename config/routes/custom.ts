@@ -10,6 +10,16 @@ const CustomRoutes: TRoutes = [
     en: '/about',
     es: '/a-proposito',
   }),
+  createRoute('menu:page.teacher', '/teacher', false, {
+    fr: '/enseignant',
+    en: '/teacher',
+    es: '/maestro',
+  }),
+  createRoute('menu:page.rating', '/teacher/rating', false, {
+    fr: '/enseignant/notation',
+    en: '/teacher/rating',
+    es: '/maestro/clasificacion',
+  }),
 ];
 
 export default CustomRoutes;
