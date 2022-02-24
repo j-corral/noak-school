@@ -1,5 +1,5 @@
 import { createApiHandler } from '@hoomies/noak.lib.api';
-import { createNote, convertNotes } from '@/lib/RateConverter';
+import { createNote, convertNotes, TNote } from '@/lib/RateConverter';
 
 export default createApiHandler().post(async (req, res) => {
   if (!req.body.grades) {
@@ -10,7 +10,7 @@ export default createApiHandler().post(async (req, res) => {
 
   const { caster, grades } = req.body;
 
-  const notes = grades.map((grade) => createNote(grade.note, grade.total, caster));
+  const notes = grades.map((grade: TNote) => createNote(grade.note, grade.total, caster));
   const converted = convertNotes(notes, caster);
 
   return res.json({
