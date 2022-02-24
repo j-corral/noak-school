@@ -64,13 +64,15 @@
     "@hoomies/unagui.components.header": "^0.0.7",
     "@hoomies/unagui.components.hero": "^0.0.12",
     "@hoomies/unagui.theme.wrapper": "^0.0.8",
+    "formik": "^2.2.9",
     "framer-motion": "^6.2.6",
     "next": "^12",
     "next-compose-plugins": "^2.2.1",
     "next-translate": "^1.3.4",
     "react": "latest",
     "react-dom": "latest",
-    "uuid": "^8.3.2"
+    "uuid": "^8.3.2",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@types/node": "17.0.18",
